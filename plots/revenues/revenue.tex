@@ -1,0 +1,22 @@
+\newcommand{\revenueFig}[1]
+{
+\begin{tikzpicture}
+  \begin{axis}
+    [    
+    bar width=20pt,
+    ybar=0pt,
+    enlargelimits=0.05,
+    ylabel={Revenue},
+    ylabel style={text height=0.02\textwidth,inner ysep=0pt},
+    enlarge x limits=0.15,
+    tickpos=left,
+    scaled y ticks=base 10:-5,
+    symbolic x coords={GRC, GraphViNE, Best Fit, First Fit, NeuroViNE},
+    xtick=data,
+    x tick label style={rotate=45,anchor=east},
+    ]
+    \addplot table[x=Name, y=Value, col sep=comma]{plots/revenues/data/#1.csv};
+    
+  \end{axis}
+\end{tikzpicture}
+}

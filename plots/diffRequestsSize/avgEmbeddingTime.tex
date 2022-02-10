@@ -1,0 +1,34 @@
+\begin{tikzpicture}
+\begin{axis}[
+    xlabel={Max Size of VNRs [number of nodes]},
+    ylabel={Average Time of Embedding [seconds]},
+    % xmin=0, xmax=1010,
+    % ymin=0, ymax=200,
+    % xtick={0,100,200,300,400,500,600,700,800, 900,1000},
+    % ytick={0,50,100,150,200},
+    legend pos=north west,
+    ymajorgrids=true,
+    grid style=dashed,
+] 
+
+\addplot[
+    color=blue,
+    mark=square*,
+    ]
+    coordinates {
+    (5, 0.01866014798482259)
+    (10, 0.02872487142974255)
+    (15 , 0.021773441165101295)
+    (20, 0.13746506793826235)
+    (25, 0.3255600485147214)
+    (30, 0.4734160198884852)
+    (35, 0.9118861006755455)
+    (40, 1.9951151165307737)
+    (45, 2.41816240198472)
+    (50, 3.2480201674442664)
+    };
+% \addlegendentry{GraphViNE}
+
+
+\end{axis}
+\end{tikzpicture}

@@ -1,0 +1,22 @@
+\begin{tikzpicture}
+  \begin{axis}
+    [    
+    ybar=0pt,
+    enlargelimits=0.05,
+    enlarge x limits=0.15,
+    tickpos=left,
+    symbolic x coords={GraphViNE, Best Fit, First Fit},
+    xtick=data,
+    % x tick label style={rotate=45,anchor=east},
+% 	legend style={at={(0.5, 1.01)},
+% 	anchor=south,legend columns=-1},
+    ylabel={Total Cost and Revenue},
+    ]
+    \addplot table[x=Name, y=Value, col sep=comma]{plots/extraFeaturesCostRevenue/revenue.csv};
+    \addlegendentry{Revenue}
+    \addplot table[x=Name, y=Value, col sep=comma]{plots/extraFeaturesCostRevenue/cost.csv};
+    \addlegendentry{Cost}
+
+    
+  \end{axis}
+\end{tikzpicture}

@@ -1,0 +1,108 @@
+
+\begin{tikzpicture}
+\begin{axis}[
+    legend cell align={right},
+    legend style={fill opacity=0.9, draw opacity=1, text opacity=1, draw=white!80!black, at={(0.95,0.8)}},
+    xlabel={Virtual Network Arrival Rate},
+    ylabel={Revenue},
+    % xmin=0, xmax=100  ,
+    % ymin=0, ymax=1,
+    % xtick={0,10,30,50,70,90, 100},
+    % ytick={0,100,200,300,400,500},
+    % legend pos=north east,
+    ymajorgrids=true,
+    grid style=dashed,
+]
+
+\addplot[
+    color=blue,
+    mark=square*,
+    ]
+    coordinates {
+(1.2,301420)
+(1.6,309334)
+(2.0,310278)
+(2.4,310838)
+(2.8,309192)
+(3.2,307755)
+(3.6,308847)
+(4.0,305227)
+(4.4,314684)
+    };
+\addlegendentry{GRC}
+
+\addplot[
+    color=red,
+    mark=triangle*,
+    ]
+    coordinates {
+(1.2,356068)
+(1.6,420413)
+(2.0,443410)
+(2.4,450674)
+(2.8,456853)
+(3.2,458993)
+(3.6,463679)
+(4.0,468482)
+(4.4,474940)
+    };
+\addlegendentry{GraphViNE}
+
+\addplot[
+    color=green,
+    mark=diamond*,
+    ]
+    coordinates {
+(1.2,283022)
+(1.6,282743)
+(2.0,285606)
+(2.4,276905)
+(2.8,275439)
+(3.2,274172)
+(3.6,272108)
+(4.0,271536)
+(4.4,271459)
+    };
+\addlegendentry{NeuroViNE}
+
+\addplot[
+    color=purple,
+    mark=pentagon*,
+    ]
+    coordinates {
+(1.2,301981)
+(1.6,306181)
+(2.0,310806)
+(2.4,309881)
+(2.8,311278)
+(3.2,303764)
+(3.6,308979)
+(4.0,307101)
+(4.4,315203)
+    };
+\addlegendentry{First Fit}
+
+\addplot[
+    color=brown,
+    mark=otimes*,
+    ]
+    coordinates {
+(1.2,303472)
+(1.6,306062)
+(2.0,312989)
+(2.4,312785)
+(2.8,313259)
+(3.2,310856)
+(3.6,313145)
+(4.0,310685)
+(4.4,317893)
+    };
+\addlegendentry{Best Fit}
+
+
+
+
+
+
+\end{axis}
+\end{tikzpicture}

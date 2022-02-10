@@ -1,0 +1,51 @@
+\begin{tikzpicture}
+\begin{axis}[
+    xlabel={Physical network size [number of servers]},
+    ylabel={Time [seconds]},
+    xmin=0, xmax=1600,
+    ymin=0,
+    % ymax=500,
+    xtick={0,200,400,600,800,1000, 1200, 1400, 1600},
+    % ytick={0,100,200,300,400,500},
+    legend pos=north west,
+    ymajorgrids=true,
+    grid style=dashed,
+    scaled x ticks=base 10:-2,
+    % width=\linewidth,
+    % height=0.5\linewidth,
+]
+
+\addplot[
+    color=blue,
+    mark=square*,
+    ]
+    coordinates {
+(100,2.4853391647338867)
+(200,4.235361337661743)
+(400,11.350443363189697)
+(600,22.781522274017334)
+(800,40.86129117012024)
+(1000,66.8314619064331)
+(1200,101.40787291526794)
+(1500,173.1523768901825)
+    };
+\addlegendentry{CPU}
+
+\addplot[
+    color=red,
+    mark=triangle*,
+    ]
+    coordinates {
+(100,4.573425054550171)
+(200,4.64028000831604)
+(400,4.674714803695679)
+(600,5.2382402420043945)
+(800,5.166032552719116)
+(1000,6.011478662490845)
+(1200,6.42925238609314)
+(1500,8.54262924194336)
+    };
+\addlegendentry{GPU}
+
+\end{axis}
+\end{tikzpicture}
