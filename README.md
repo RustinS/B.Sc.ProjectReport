@@ -1,3 +1,3 @@
-## GraphViNE Persian Report
+## Texture Synthesis For Objects With Repetitive Patters Persian Report
 
-this repository contains a persian report of [GraphViNE](https://github.com/gsoosk/GraphViNE), a novel machine learning method to accelerate virtual network embeding problem. 
+This repository contains a persian report of [Texture Synthesis For Objects With Repetitive Patters]()
